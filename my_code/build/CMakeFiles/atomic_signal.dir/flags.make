@@ -4,9 +4,9 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/qilei/llama.cpp/my_code/include
+CXX_INCLUDES = -I/Users/qilei/llama.cpp/my_code/../vendor
 
-CXX_FLAGSarm64 = -std=gnu++2b -arch arm64 -Wall -Wextra -O2
+CXX_FLAGSarm64 = -std=gnu++2b -arch arm64 -Wall -Wextra -O3
 
-CXX_FLAGS = -std=gnu++2b -arch arm64 -Wall -Wextra -O2
+CXX_FLAGS = -std=gnu++2b -arch arm64 -Wall -Wextra -O3
 

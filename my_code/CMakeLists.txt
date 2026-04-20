@@ -7,10 +7,13 @@ set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
-aux_source_directory(src SRC_LIST) # 将远吗文件保存在 SRC_LIST 中
+aux_source_directory(src SRC_LIST) # 将远码文件保存在 SRC_LIST 中
 # 编译选项（所有目标）
 add_compile_options(-Wall -Wextra)
 message(STATUS "SOURCES: ${SRC_LIST}")
+
+# 添加 llama.cpp 的 vendor 目录到 include 路径
+include_directories(${CMAKE_SOURCE_DIR}/../vendor)
 
 foreach(src IN LISTS SRC_LIST)
     get_filename_component(target_name "${src}" NAME_WE)

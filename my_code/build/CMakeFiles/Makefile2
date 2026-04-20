@@ -65,12 +65,14 @@ CMAKE_BINARY_DIR = /Users/qilei/llama.cpp/my_code/build
 # The main recursive "all" target.
 all: CMakeFiles/LOGO.dir/all
 all: CMakeFiles/atomic_signal.dir/all
+all: CMakeFiles/json-example.dir/all
 all: CMakeFiles/nlohmann-json.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/LOGO.dir/codegen
 codegen: CMakeFiles/atomic_signal.dir/codegen
+codegen: CMakeFiles/json-example.dir/codegen
 codegen: CMakeFiles/nlohmann-json.dir/codegen
 .PHONY : codegen
 
@@ -81,6 +83,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/LOGO.dir/clean
 clean: CMakeFiles/atomic_signal.dir/clean
+clean: CMakeFiles/json-example.dir/clean
 clean: CMakeFiles/nlohmann-json.dir/clean
 .PHONY : clean
 
@@ -149,13 +152,45 @@ CMakeFiles/atomic_signal.dir/clean:
 .PHONY : CMakeFiles/atomic_signal.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/json-example.dir
+
+# All Build rule for target.
+CMakeFiles/json-example.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json-example.dir/build.make CMakeFiles/json-example.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json-example.dir/build.make CMakeFiles/json-example.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/qilei/llama.cpp/my_code/build/CMakeFiles --progress-num=5,6 "Built target json-example"
+.PHONY : CMakeFiles/json-example.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/json-example.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/qilei/llama.cpp/my_code/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/json-example.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/qilei/llama.cpp/my_code/build/CMakeFiles 0
+.PHONY : CMakeFiles/json-example.dir/rule
+
+# Convenience name for target.
+json-example: CMakeFiles/json-example.dir/rule
+.PHONY : json-example
+
+# codegen rule for target.
+CMakeFiles/json-example.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json-example.dir/build.make CMakeFiles/json-example.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/qilei/llama.cpp/my_code/build/CMakeFiles --progress-num=5,6 "Finished codegen for target json-example"
+.PHONY : CMakeFiles/json-example.dir/codegen
+
+# clean rule for target.
+CMakeFiles/json-example.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json-example.dir/build.make CMakeFiles/json-example.dir/clean
+.PHONY : CMakeFiles/json-example.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/nlohmann-json.dir
 
 # All Build rule for target.
 CMakeFiles/nlohmann-json.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nlohmann-json.dir/build.make CMakeFiles/nlohmann-json.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nlohmann-json.dir/build.make CMakeFiles/nlohmann-json.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/qilei/llama.cpp/my_code/build/CMakeFiles --progress-num=5,6 "Built target nlohmann-json"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/qilei/llama.cpp/my_code/build/CMakeFiles --progress-num=7,8 "Built target nlohmann-json"
 .PHONY : CMakeFiles/nlohmann-json.dir/all
 
 # Build rule for subdir invocation for target.
@@ -172,7 +207,7 @@ nlohmann-json: CMakeFiles/nlohmann-json.dir/rule
 # codegen rule for target.
 CMakeFiles/nlohmann-json.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nlohmann-json.dir/build.make CMakeFiles/nlohmann-json.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/qilei/llama.cpp/my_code/build/CMakeFiles --progress-num=5,6 "Finished codegen for target nlohmann-json"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/qilei/llama.cpp/my_code/build/CMakeFiles --progress-num=7,8 "Finished codegen for target nlohmann-json"
 .PHONY : CMakeFiles/nlohmann-json.dir/codegen
 
 # clean rule for target.

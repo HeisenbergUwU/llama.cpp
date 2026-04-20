@@ -143,6 +143,19 @@ atomic_signal/fast:
 .PHONY : atomic_signal/fast
 
 #=============================================================================
+# Target rules for targets named json-example
+
+# Build rule for target.
+json-example: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 json-example
+.PHONY : json-example
+
+# fast build rule for target.
+json-example/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json-example.dir/build.make CMakeFiles/json-example.dir/build
+.PHONY : json-example/fast
+
+#=============================================================================
 # Target rules for targets named nlohmann-json
 
 # Build rule for target.
@@ -203,6 +216,30 @@ src/atomic_signal.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atomic_signal.dir/build.make CMakeFiles/atomic_signal.dir/src/atomic_signal.cpp.s
 .PHONY : src/atomic_signal.cpp.s
 
+src/json-example.o: src/json-example.cpp.o
+.PHONY : src/json-example.o
+
+# target to build an object file
+src/json-example.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json-example.dir/build.make CMakeFiles/json-example.dir/src/json-example.cpp.o
+.PHONY : src/json-example.cpp.o
+
+src/json-example.i: src/json-example.cpp.i
+.PHONY : src/json-example.i
+
+# target to preprocess a source file
+src/json-example.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json-example.dir/build.make CMakeFiles/json-example.dir/src/json-example.cpp.i
+.PHONY : src/json-example.cpp.i
+
+src/json-example.s: src/json-example.cpp.s
+.PHONY : src/json-example.s
+
+# target to generate assembly for a file
+src/json-example.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json-example.dir/build.make CMakeFiles/json-example.dir/src/json-example.cpp.s
+.PHONY : src/json-example.cpp.s
+
 src/nlohmann-json.o: src/nlohmann-json.cpp.o
 .PHONY : src/nlohmann-json.o
 
@@ -237,6 +274,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... LOGO"
 	@echo "... atomic_signal"
+	@echo "... json-example"
 	@echo "... nlohmann-json"
 	@echo "... src/LOGO.o"
 	@echo "... src/LOGO.i"
@@ -244,6 +282,9 @@ help:
 	@echo "... src/atomic_signal.o"
 	@echo "... src/atomic_signal.i"
 	@echo "... src/atomic_signal.s"
+	@echo "... src/json-example.o"
+	@echo "... src/json-example.i"
+	@echo "... src/json-example.s"
 	@echo "... src/nlohmann-json.o"
 	@echo "... src/nlohmann-json.i"
 	@echo "... src/nlohmann-json.s"
