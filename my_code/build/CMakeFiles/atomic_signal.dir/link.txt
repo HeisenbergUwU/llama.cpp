@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/atomic_signal.dir/src/atomic_signal.cpp.o -o /Users/qilei/llama.cpp/my_code/bin/atomic_signal  -lpthread

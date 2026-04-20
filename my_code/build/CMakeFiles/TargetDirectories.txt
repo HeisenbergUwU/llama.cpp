@@ -1,0 +1,5 @@
+/Users/qilei/llama.cpp/my_code/build/CMakeFiles/LOGO.dir
+/Users/qilei/llama.cpp/my_code/build/CMakeFiles/atomic_signal.dir
+/Users/qilei/llama.cpp/my_code/build/CMakeFiles/nlohmann-json.dir
+/Users/qilei/llama.cpp/my_code/build/CMakeFiles/edit_cache.dir
+/Users/qilei/llama.cpp/my_code/build/CMakeFiles/rebuild_cache.dir
